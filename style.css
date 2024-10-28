@@ -1,0 +1,217 @@
+``CSS`
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Lusitana;
+
+}
+
+body {
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #C29E00; /* cor de fundo semelhante à da imagem */
+    padding: 20px 0;
+    height: 100px; /* Defina a altura desejada */
+}
+
+.header .logo {
+    height: auto;
+    width: auto;
+    max-height: 80px; /* Ajuste para a logo ocupar mais espaço */
+    margin-right: 20px; 
+}
+
+.header .logo img {
+        height: auto;
+        width: auto;
+        max-height: 80px; /* Ajuste para a logo ocupar mais espaço */
+        margin-right: 20px; /* Espaço para separar a logo do texto */
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    width: 60%; /* Ajuste conforme a largura desejada */
+}
+
+nav a {
+    color: #FFF;
+font-family: Lusitana;
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+.header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.header nav ul li {
+    margin-left: 20px;
+}
+
+.header nav ul li a {
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+    font-weight: bold;
+}
+.main{
+    background-image: url(asents-img/home.png);
+    padding: 40px;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.hero-text {
+    max-width: 50%;
+}
+
+.hero-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.hero-image {
+    position: relative;
+    max-width: 300px;
+}
+
+.hero-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.hero-image .cafe-image {
+    position: absolute;
+    bottom: -20px;
+    right: -40px;
+    width: 100px;
+    transform: rotate(-20deg);
+}
+
+/* Seção de Navegação */
+.navigation-section {
+    padding: 40px 20px;
+    background-color: #0f2139;
+    text-align: center;
+}
+
+.navigation-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.navigation-cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.card {
+    width: 200px;
+    text-decoration: none;
+    color: white;
+    background-color: #1c2d4f;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card-content h3 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    line-height: 1.3;
+}
+
+/* Rodapé */
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    background-color: #14233c;
+    padding: 20px;
+    color: white;
+}
+
+.footer-logo {
+    text-align: center;
+}
+
+.footer-logo img {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+.footer-links {
+    text-align: left;
+}
+
+.footer-links h4 {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links ul li {
+    margin-bottom: 5px;
+}
+
+.footer-links ul li a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.footer-copy {
+    text-align: center;
+    padding-top: 10px;
+    font-size: 0.8rem;
+    color: #999;
+    width: 100%;
+}
