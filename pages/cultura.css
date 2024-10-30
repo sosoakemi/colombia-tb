@@ -1,3 +1,7 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lusitana:wght@400;700&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
@@ -5,39 +9,99 @@
     font-family: ABeeZee;
 
 }
+:root{
+    --azul-p:#113F60; 
+    --amarelo:#CE9800;
+    --branco:#fff;
+}
 
-
-header {
-    background-color: #113F60;
-    height: 6rem;
+/*nav e hader*/
+.header {
+    font-family: Lusitana;
     display: flex;
     align-items: center;
+    justify-content: center;
+    background-color: var(--amarelo); /* cor de fundo semelhante à da imagem */
+    padding: 20px 0;
+    height: 100px; /* Defina a altura desejada */
+}
+
+.header .logo {
+    height: auto;
+    width: auto;
+    max-height: 80px; 
+    margin-right: 20px; 
+}
+
+.header .logo img {
+        height: auto;
+        width: auto;
+        max-height: 80px; /* Ajuste para a logo ocupar mais espaço */
+        margin-right: 20px; /* Espaço para separar a logo do texto */
+}
+nav {
+    font-family: Lusitana;
+    display: flex;
+    justify-content: space-around;
+    width: 60%; /* Ajuste conforme a largura desejada */
+}
+
+nav a {
+    color: var(--amarelo);
+ font-family: Lusitana;
+    font-size: 20px;
+   font-style: normal;
+   font-weight: 700;
+  line-height: normal;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+.header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.header nav ul li {
+    margin-left: 20px;
+}
+
+.header nav ul li a {
+    color: var(--branco);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    background-color: #1c3d5b;
+    padding: 30px 20px;
+    
 }
 
 h1 {
-    width: 678px;
-    height: 88.77px;
-    top: 113px;
-    left: 13px;
-    gap: 0px;
-    opacity: 0px;
-    color: #fff;
-
     font-family: Lusitana;
-    font-size: 50px;
-    line-height: 83.01px;
-    text-align: center;
+    font-weight: 700;
+    font-size: xx-larges;
+
+    height: auto;
+    width: auto;
+    color: white;
+    font-size: 24px;
     font-weight: bold;
-
-    justify-content: flex-start;
+    margin: 0;
+    padding-left: 7rem;
 }
 
-.box {
-    display: flex;
-    align-items: center;
-    flex-direction: row-reverse;
-}
+.line {
 
+   padding-left: 18.8rem;
+}
 
 .danca img {
     width: 30rem;
