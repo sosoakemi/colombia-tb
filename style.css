@@ -21,6 +21,7 @@ body {
     color: #fff;
     
     
+    
 }
 
 .header {
@@ -51,7 +52,7 @@ nav {
     display: flex;
     justify-content: space-around;
     width: 60%; /* Ajuste conforme a largura desejada */
-}
+} 
 
 nav a {
     color: var(--amarelo);
@@ -83,53 +84,19 @@ nav a:hover {
     font-weight: bold;
 }
 
-
-.hero {
-    width: 1440px;
-height: 1277px;
-
+main{
     
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-image: url('background.jpg');
-    max-width: max-content;
+    background-image: var(--home-bg);
     background-size: cover;
     background-position: center;
-    color: white;
-}
-
-.hero-text {
-    max-width: 50%;
-}
-
-.hero-text h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-}
-
-.hero-text p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-}
-
-.hero-image {
-    position: relative;
-    max-width: 300px;
-}
-
-.hero-image img {
+    background-repeat: no-repeat;
+    
+  }
+  main img{
     width: 100%;
-    border-radius: 10px;
-}
-
-.hero-image .cafe-image {
-    position: absolute;
-    bottom: -20px;
-    right: -40px;
-    width: 100px;
-    transform: rotate(-20deg);
-}
+    height: 100vh;
+  }
+  
 
 /* Seção de Navegação */
 .navigation-section {
@@ -157,14 +124,6 @@ height: 1277px;
     gap: 20px;
 }
 
-main{
-  background-image: var(--home-bg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
- 
-
-}
 
 .card {
     justify-content: space-around;
@@ -201,9 +160,11 @@ main{
     color: #fff;
     padding: 40px 80px;
     position: relative;
+   
 }
 
 .recurso__principal {
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
