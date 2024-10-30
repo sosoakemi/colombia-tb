@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: ABeeZee;
+
+}
+
+
+header {
+    background-color: #113F60;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+    width: 678px;
+    height: 88.77px;
+    top: 113px;
+    left: 13px;
+    gap: 0px;
+    opacity: 0px;
+    color: #fff;
+
+    font-family: Lusitana;
+    font-size: 50px;
+    line-height: 83.01px;
+    text-align: center;
+    font-weight: bold;
+
+    justify-content: flex-start;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+
+.danca img {
+    width: 30rem;
+    margin-right: 20rem;
+    height: auto;
+    margin: 2rem;
+    object-fit: cover;
+
+}
+
+.danca {
+    display: flex;
+    align-items: center;
+
+}                                          
+
+.textd {
+    font-family: ABeeZee;
+    font-size: 15px;
+    font-weight: 200;
+    line-height: 30px;
+    text-align: left;
+    width: 484.04px;
+    height: 492px;
+    top: 474px;
+    left: 846.47px;
+    gap: 0px;
+    opacity: 0px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+
+    width: 648.98px;
+    height: 600px;
+    top: 363px;
+    left: 762px;
+    gap: 0px;
+    border-radius: 25px;
+    opacity: 0px;
+    background-color: #113F60;
+}
+
+.retangulo {
+    justify-content: flex-end;
+}

@@ -1,22 +1,34 @@
-``CSS`
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Lusitana;
+    
 
+}
+
+:root {
+    --azul-p:#113F60; 
+    --amarelo:#CE9800;
+    --branco:#fff;
+    --home-bg: url(./asents-img/home.png);
 }
 
 body {
+    
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.92) 100%);
     background-color: #1a1a1a;
     color: #fff;
+    
+    
 }
 
 .header {
+    font-family: Lusitana;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #C29E00; /* cor de fundo semelhante à da imagem */
+    background-color: var(--amarelo); /* cor de fundo semelhante à da imagem */
     padding: 20px 0;
     height: 100px; /* Defina a altura desejada */
 }
@@ -35,13 +47,14 @@ body {
         margin-right: 20px; /* Espaço para separar a logo do texto */
 }
 nav {
+    font-family: Lusitana;
     display: flex;
     justify-content: space-around;
     width: 60%; /* Ajuste conforme a largura desejada */
 }
 
 nav a {
-    color: #FFF;
+    color: var(--amarelo);
 font-family: Lusitana;
 font-size: 20px;
 font-style: normal;
@@ -65,21 +78,22 @@ nav a:hover {
 }
 
 .header nav ul li a {
-    color: hsl(0, 0%, 100%);
+    color: var(--branco);
     text-decoration: none;
     font-weight: bold;
 }
-.main{
-    background-image: url(asents-img/home.png);
-    padding: 40px;
-}
+
 
 .hero {
+    width: 1440px;
+height: 1277px;
+
+    
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    padding: 5px;
     background-image: url('background.jpg');
+    max-width: max-content;
     background-size: cover;
     background-position: center;
     color: white;
@@ -119,13 +133,20 @@ nav a:hover {
 
 /* Seção de Navegação */
 .navigation-section {
+    
     padding: 40px 20px;
-    background-color: #0f2139;
+    background-color:#113F60;
     text-align: center;
 }
 
 .navigation-section h2 {
-    font-size: 2rem;
+    width: 1110px;
+  height: 82px;
+
+    font-family: Lusitana;
+   font-size: 64px;
+    font-style: normal;
+
     margin-bottom: 20px;
     color: #fff;
 }
@@ -136,11 +157,22 @@ nav a:hover {
     gap: 20px;
 }
 
+main{
+  background-image: var(--home-bg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+ 
+
+}
+
 .card {
-    width: 200px;
+    justify-content: space-around;
+    width: 310px;
+    height: 553px;
     text-decoration: none;
     color: white;
-    background-color: #1c2d4f;
+    background-color: #113F60;
     border-radius: 8px;
     overflow: hidden;
     transition: transform 0.3s ease;
@@ -151,67 +183,115 @@ nav a:hover {
 }
 
 .card img {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
 }
 
-.card-content {
-    padding: 15px;
-}
 
-.card-content h3 {
-    font-size: 1.1rem;
-    font-weight: bold;
-    line-height: 1.3;
-}
+
 
 /* Rodapé */
-.footer {
+.recurso {
+    font-family: "ABeeZee";
     display: flex;
-    justify-content: space-around;
+    justify-content: space-around; /* Centraliza todo o conteúdo */
     align-items: flex-start;
-    background-color: #14233c;
-    padding: 20px;
-    color: white;
+    background-color: #113F60;
+    color: #fff;
+    padding: 40px 80px;
+    position: relative;
 }
 
-.footer-logo {
-    text-align: center;
+.recurso__principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
 }
 
-.footer-logo img {
-    width: 50px;
-    margin-bottom: 10px;
+.recurso__principal img {
+    margin-bottom: 15px;
 }
 
-.footer-links {
-    text-align: left;
+.recurso__encontro {
+    font-size: 18px;
+    display: flex;
+    gap: 55px; /* Espaço entre as listas de links */
+    transform: translateX(-20%); /* Mova um pouco para a esquerda */
 }
 
-.footer-links h4 {
-    margin-bottom: 10px;
-    font-size: 1rem;
+.recurso__lista {
+    display: flex;
+    gap: 100px;
 }
 
-.footer-links ul {
+/* Logo e redes sociais */
+.recurso__principal i {
+    margin-left: 15px;
+    font-size: 25px;
+    margin-top: 15px;
+    display: inline-block;
+}
+
+/* Títulos das listas */
+.lista__1 h2,
+.lista__2 h2 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+/* Listas de links */
+.lista__1 ul,
+.lista__2 ul {
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-.footer-links ul li {
-    margin-bottom: 5px;
+.lista__1 ul li,
+.lista__2 ul li {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 400;
 }
 
-.footer-links ul li a {
-    color: #ccc;
+.lista__1 ul li a,
+.lista__2 ul li a {
+    color: #fff;
     text-decoration: none;
-    font-size: 0.9rem;
 }
 
-.footer-copy {
+/* Rodapé inferior (direitos reservados) */
+.footer__bottom {
+    background-color: #d9a100;
     text-align: center;
-    padding-top: 10px;
-    font-size: 0.8rem;
-    color: #999;
-    width: 100%;
+    padding: 10px 0;
+    color: #113F60;
+    font-size: 14px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+
+
+/* Fim */
+.fim {
+    font-family: "ABeeZee", sans-serif;
+     font-weight: 400;
+     
+    display: flex;
+    height: 57.3px;
+    background-color: #C29E00;
+    color: #fff;
+    font-size: 18px;
+}
+
+.fim p {
+    display: flex;
+    align-items: center;
+    margin-left: 112px;
 }

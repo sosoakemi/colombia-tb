@@ -3,9 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Colômbia</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <title>Colômbia</title>
 </head>
+
 <body>
     <header class="header">
         <div class="logo">
@@ -14,78 +18,80 @@
         </div>
         <nav>
             <ul>
-                <li><a href="#conheca">Conheça</a></li>
-                <li><a href="#historia">História</a></li>
-                <li><a href="#cultura">Cultura</a></li>
-                <li><a href="#atracoes">Atrações</a></li>
+                <li><a href="index.html">Conheça</a></li>
+                <li><a href="./pages/historia.html">História</a></li>
+                <li><a href="./pages/cultura.html">Cultura</a></li>
+                <li><a href="./pages/atracoes.html">Atrações</a></li>
             </ul>
         </nav>
     </header>
 
-    <main class="hero">
-        <img src="asents-img/home.png" alt="home">
+    <main>
+        <img src="asents-img/home.png" alt="">
     </main>
 
       <!-- Seção de Vídeo -->
       <section class="video-section">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/YUEYuS0Jbkk?si=7osXdpwWwI1AJ2ux" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="100%" style="height: 100vh;" src="https://www.youtube.com/embed/YUEYuS0Jbkk?si=7osXdpwWwI1AJ2ux" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </section>
 
     <!-- Seção de Navegação -->
     <section class="navigation-section">
         <h2>O que te espera na Colômbia:</h2>
         <div class="navigation-cards">
-            <a href="#cidades" class="card">
-                <img src="asents-img/Cidades Hist.png" alt="Cidades Históricas">
-                <div class="card-content">
-                  
-                </div>
+            <a href="pages/historia.html" class="card">
+                <img src="asents-img/Cidades Hist.png" alt="Praias Paradisíacas">
             </a>
-            <a href="#praias" class="card">
-                <img src="praia-paradisiaca.jpg" alt="Praias Paradisíacas">
-                <div class="card-content">
-                    <h3>Praias <br>Paradisíacas</h3>
-                </div>
+            <a href="pages/atracoes.html" class="card">
+                <img src="asents-img/praias.png" alt="Praias Paradisíacas">
             </a>
-            <a href="#gastronomia" class="card">
-                <img src="delicias-gastronomicas.jpg" alt="Delícias Gastronômicas">
-                <div class="card-content">
-                    <h3>Delícias <br>Gastronômicas</h3>
-                </div>
+            <a href="pages/cultura.html" class="card">
+                <img src="asents-img/gastronomia.png" alt="Delícias Gastronômicas">
             </a>
-            <a href="#festivais" class="card">
-                <img src="festivais-tradicionais.jpg" alt="Festivais Tradicionais">
-                <div class="card-content">
-                    <h3>Festivais <br>Tradicionais</h3>
-                </div>
+            <a href="pages/atracoes.html" class="card">
+                <img src="asents-img/festivais.png" alt="Festivais Tradicionais">
             </a>
         </div>
     </section>
-
     <!-- Rodapé -->
-    <footer class="footer">
-        <div class="footer-logo">
-            <img src="logo.png" alt="Colômbia Travel Logo">
-            <p>www.colombiatravel.com.br<br>+55 11 4004-0000</p>
+    <footer>
+        <div class="recurso">
+            <div class="recurso__principal">
+                <img src="asents-img/logo.png" alt="Logo Colômbia Travel">
+                <div>
+                    <p>www.colombiatravel.com.br</p>
+                    <p>(55) 11 4004-0000</p>
+                </div>
+                <div>
+                    <i class="icon-instagram"></i>
+                    <i class="icon-linkedin"></i>
+                    <i class="icon-youtube"></i>
+                </div>
+            </div>
+            <div class="recurso__encontro">
+                <div class="lista__1">
+                    <h2>Informações</h2>
+                    <ul>
+                        <li><a href="#">Conheça</a></li>
+                        <li><a href="#">História</a></li>
+                        <li><a href="#">Cultura</a></li>
+                        <li><a href="#">Atrações</a></li>
+                    </ul>
+                </div>
+                <div class="lista__2">
+                    <h2>Recursos</h2>
+                    <ul>
+                        <li><a href="#">Suporte</a></li>
+                        <li><a href="#">Política de privacidade</a></li>
+                        <li><a href="#">Termos e condições</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div class="footer-links">
-            <h4>Informações</h4>
-            <ul>
-                <li><a href="#conheca">Conheça</a></li>
-                <li><a href="#historia">História</a></li>
-                <li><a href="#cultura">Cultura</a></li>
-                <li><a href="#atracoes">Atrações</a></li>
-            </ul>
+        <div class="fim">
+            <p>Colômbia Travel © 2024. Todos os direitos reservados</p>
         </div>
-        <div class="footer-links">
-            <h4>Recursos</h4>
-            <ul>
-                <li><a href="#suporte">Suporte</a></li>
-                <li><a href="#privacidade">Política de Privacidade</a></li>
-                <li><a href="#termos">Termos e Condições</a></li>
-            </ul>
-        </div>
-        <p class="footer-copy">Colômbia Travel © 2024. Todos os direitos reservados.</p>
     </footer>
+
 </body>
 </html>
