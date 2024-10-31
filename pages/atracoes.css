@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: ABeeZee;
+
+}
+:root{
+    --azul-p:#113F60; 
+    --amarelo:#CE9800;
+    --branco:#fff;
+}
+
+.header {
+    font-family: Lusitana;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--amarelo);
+    padding: 20px 0;
+    height: 100px;
+}
+
+.header .logo {
+    max-height: 80px;
+    margin-right: 20px; 
+}
+
+nav {
+    font-family: Lusitana;
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+}
+
+nav a {
+    color: var(--amarelo);
+    font-family: Lusitana;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.header nav ul li {
+    margin-left: 20px;
+}
+
+.header nav ul li a {
+    color: var(--branco);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+body {
+    background-color: #fff;
+    
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFC107;
+    padding: 10px 20px;
+}
+
+header .logo {
+    color: #004D6F;
+    font-size: 1.5em;
+}
+
+header nav a {
+    color: #004D6F;
+    margin-left: 15px;
+    text-decoration: none;
+}
+section {
+    background-color: #113F60;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+}
+.box h1 {
+    width: 678px;
+    height: 88.77px;
+    top: 113px;
+    left: 13px;
+    gap: 0px;
+    opacity: 0px;
+    color: #fff;
+
+    font-family: Lusitana;
+    font-size: 50px;
+    line-height: 83.01px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.box img {
+    width: 80%;
+    height: 18px;
+}
+.container {
+    align-items: center;
+   
+    padding: 20px;
+    border-radius: 5px;
+    width: fit-content;
+    margin: 20px auto;
+}
+
+/* Title styling */
+h1 {
+    font-family: Lusitana;
+    font-size: 3rem;
+    color: #1E3A5F;
+    margin: 0;
+}
+
+/* Subtitle styling */
+p {
+    align-items: center;
+    justify-items: center;
+    font-size: 1rem;
+    color: #1E3A5F;
+    margin: 10px 0 20px;
+}
+
+/* Button container styling */
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+/* Button styling */
+.button {
+    padding: 10px 20px;
+    border: 2px solid #1E3A5F;
+    border-radius: 20px;
+    font-size: 1rem;
+    color: #1E3A5F;
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Active button styling */
+.button.active {
+    background-color: #1E3A5F;
+    color: #FFFFFF;
+}
+
+/* Hover effect for buttons */
+.button:hover {
+    background-color: #D2E9FF;
+}
+
