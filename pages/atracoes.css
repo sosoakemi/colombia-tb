@@ -5,12 +5,12 @@
     padding: 0;
     box-sizing: border-box;
     font-family: ABeeZee;
-
 }
-:root{
-    --azul-p:#113F60; 
-    --amarelo:#CE9800;
-    --branco:#fff;
+
+:root {
+    --azul-p: #113F60; 
+    --amarelo: #CE9800;
+    --branco: #fff;
 }
 
 .header {
@@ -134,62 +134,125 @@ h1 {
     color: #1E3A5F;
     margin: 0;
 }
-
 /* Subtitle styling */
 p {
-    align-items: center;
-    justify-items: center;
     font-size: 1rem;
     color: #1E3A5F;
-    margin: 10px 0 20px;
+    margin: 5px 0 10px;
 }
 
 /* Button container styling */
 .buttons {
     display: flex;
-    gap: 10px;
+    gap: 5px;
+    justify-content: center;
 }
 
 /* Button styling */
 .button {
-    padding: 10px 20px;
+    padding: 5px 10px;
     border: 2px solid #1E3A5F;
     border-radius: 20px;
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: #1E3A5F;
     background-color: transparent;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
 }
 
-/* Active button styling */
 .button.active {
     background-color: #1E3A5F;
     color: #FFFFFF;
 }
 
-/* Hover effect for buttons */
 .button:hover {
     background-color: #D2E9FF;
 }
 
+.box1 img {
+      width: 100vw; /* Ocupa toda a largura da viewport */
+    max-width: 100%; /* Garante que não ultrapasse os limites da tela */
+    height: auto; /* Mantém a proporção da imagem */
+    padding: 0; /* Remove o padding para evitar espaços */
+    margin: 0 auto; /* Centraliza a imagem se necessário */
+    display: block; /* Remove qualquer espaçamento inline */
+  
+}
 
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        height: auto;
+    }
 
+    .header .logo {
+        margin-bottom: 10px;
+    }
 
+    nav {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
 
+    nav a {
+        font-size: 0.9rem;
+        margin: 5px 0;
+    }
 
+    .box h1 {
+        font-size: 1.2rem;
+    }
 
+    h1 {
+        font-size: 1.5rem;
+    }
 
+    .buttons {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
 
+    .button {
+        width: 100%;
+        text-align: center;
+        font-size: 0.9rem;
+    }
+}
 
+@media (max-width: 480px) {
+    nav {
+        width: 100%;
+    }
 
+    .header {
+        padding: 10px;
+    }
 
+    nav a {
+        font-size: 0.8rem;
+    }
 
+    .box h1 {
+        font-size: 1rem;
+    }
 
-footer{
-    background-color: #CE9800;
-    height: 456px;
-    top: 2912px;
-    left: 146px;
-    border-radius: 30px;
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    .container {
+        width: 90%;
+        padding: 5px;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+
+    .button {
+        width: 100%;
+    }
 }
