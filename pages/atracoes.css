@@ -128,6 +128,7 @@ section {
 
 /* Title styling */
 h1 {
+   
     font-family: Lusitana;
     font-size: 3rem;
     color: #1E3A5F;
@@ -172,3 +173,23 @@ p {
     background-color: #D2E9FF;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    background-color: #CE9800;
+    height: 456px;
+    top: 2912px;
+    left: 146px;
+    border-radius: 30px;
+}
